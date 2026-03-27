@@ -1,0 +1,80 @@
+* {
+    font-family: Arial, Helvetica, serif;
+}
+
+.HeaderBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: black;
+    height: 80px;
+    width: 101%;
+    z-index: 10;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+.HeaderBanner img {
+    height: 75px;
+}
+
+.HeaderBanner a:link,
+a:visited,
+a:link:active,
+a:visited:active,
+a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.HeaderBanner p:hover {
+    border-bottom: white solid 1px;
+}
+
+.HeaderBanner p {
+    font-size: large;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main h1 {
+    position: relative;
+    font-size: 90px;
+    margin-top: -250px;
+    z-index: 11;
+    color: white;
+}
+
+main hr {
+    position: relative;
+    width: 28vw;
+    border: 2px white solid;
+    color: white;
+    background-color: white;
+    z-index: 11;
+    margin-left: 0;
+    margin-top: -70px;
+}
+
+main img {
+    margin: -8px;
+    width: 99vw;
+    z-index: 1;
+}
+
+.ZoneText {
+    position: absolute;
+    font-size: larger;
+    width: 40vw;
+    margin-top: 0px;
+    z-index: 11;
+    color: white;
+}
