@@ -2,22 +2,24 @@
     font-family: Arial, Helvetica, serif;
 }
 
+body {
+    margin: 0;
+}
+
 .HeaderBanner {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
+    position: absolute;
     background-color: black;
-    height: 80px;
-    width: 101%;
+    height: 50px;
+    width: 100%;
     z-index: 10;
-    margin-left: -8px;
-    margin-top: -8px;
 }
 
 .HeaderBanner img {
-    height: 75px;
+    height: 50px;
 }
 
 .HeaderBanner a:link,
@@ -40,35 +42,40 @@ a:hover {
 }
 
 main {
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 25% 25% 25% 25%;
+    height: 800px;
+}
+
+.GridTitle {
+    display:flex;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.BaselArchi {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    grid-row: 1/4;
+    grid-column: 3;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    justify-content: center;
 }
 
-main h1 {
-    position: relative;
-    font-size: 90px;
-    margin-top: -250px;
-    z-index: 11;
-    color: white;
+.BaselArchi img {
+    max-height: 600px;
 }
 
-main hr {
-    position: relative;
-    width: 28vw;
-    border: 2px white solid;
-    color: white;
-    background-color: white;
-    z-index: 11;
-    margin-left: 0;
-    margin-top: -70px;
+.StreetFood {
+    display: flex;
+    grid-row: 2/5;
+    grid-column: 2;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    justify-content:flex-end;
 }
 
-main img {
-    margin: -8px;
-    width: 99vw;
-    z-index: 1;
-}
 
 .ZoneText {
     position: absolute;
@@ -77,4 +84,17 @@ main img {
     margin-top: 0px;
     z-index: 11;
     color: white;
+}
+
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: relative;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
 }
