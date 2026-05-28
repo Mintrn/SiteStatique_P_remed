@@ -63,11 +63,13 @@ a:hover {
     border-bottom: none;
 }
 
+
 main {
     flex: 1;
-    display: flex;
-    overflow: hidden;
+    display: block;
+    overflow-y: auto;
 }
+
 
 .Background {
     position: relative;
